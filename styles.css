@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
+}
+.container{
+    margin-top: 55px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.screen{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px;
+}
+button{ 
+    margin: 20px;
+    height: 50px;
+    width: 70px;
+    background-color: #444444;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-color: #444444;
+    border-width: 1px;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.2), 
+              inset 2px 2px 4px rgba(0, 0, 0, 0.5), 
+              0 2px 5px rgba(0, 0, 0, 0.6);
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2 ease;
+}
+button:hover{
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.3), 
+              inset 1px 1px 3px rgba(0, 0, 0, 0.4), 
+              0 3px 6px rgba(0, 0, 0, 0.7);
+}
+button:active {
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.6), 
+                inset -2px -2px 6px rgba(255, 255, 255, 0.2);
+    transform: translateY(1px); 
+}
+.AC{
+    background-color: #00CC66;
+}
+#output{
+    height: 80px;
+    width: 90%;
+    text-align: right;
+    border-radius: 10px;
+    background-color: rgb(201, 170, 170);
+    color: rgb(61, 19, 19);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    padding: 10px;
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.5),
+                inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    margin: 10px 0;
+}
+@media(max-width:600px){
+    .buttons{
+        gap: 2px;
+    }
+    button{
+        margin: 4px;
+        height: 50px;
+        width: 50px;
+        font-size: 0.9rem;
+    }
+    #output {
+        font-size: 1.5rem; 
+    }
+}

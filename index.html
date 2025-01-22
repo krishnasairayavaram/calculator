@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <input type="text" id="output" disabled/>
+        </div>
+        <div class="buttons">
+            <button onclick="numeric(7)">7</button>
+            <button onclick="numeric(8)">8</button>
+            <button onclick="numeric(9)">9</button>
+            <button onclick="CE()">CE</button>
+            <button onclick="AC()" class="AC">AC</button>
+            <button onclick="numeric(4)">4</button>
+            <button onclick="numeric(5)">5</button>
+            <button onclick="numeric(6)">6</button>
+            <button onclick="op('/')">÷</button>
+            <button onclick="per()">%</button>
+            <button onclick="numeric(1)">1</button>
+            <button onclick="numeric(2)">2</button>
+            <button onclick="numeric(3)">3</button>
+            <button onclick="op('*')">×</button>
+            <button onclick="op('-')">-</button>
+            <button onclick="numeric(0)">0</button>
+            <button onclick="numeric('00')">00</button>
+            <button onclick="point()">.</button>
+            <button onclick="op('+')">+</button>
+            <button onclick="calculation()">=</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
